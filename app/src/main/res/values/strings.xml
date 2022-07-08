@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">messenger</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="e_mail">Электронная почта</string>
+    <string name="password">Пароль</string>
+    <string name="loginbtn">Войти</string>
+    <string name="forgotpass">Забыли пароль?</string>
+    <string name="swipe_left_for_register">Свайпните влево для регистрации</string>
 </resources>
