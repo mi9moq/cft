@@ -2,9 +2,11 @@ package com.example.messenger.domain
 
 interface MessengerRepository {
 
-    fun userRegistration(userProfile: UserProfile)
+    suspend fun userRegistration(userProfile: UserProfile)
 
-    fun editUserProfile(userProfile: UserProfile)
+    suspend fun editUserProfile(userProfile: UserProfile)
 
-    fun showUserProfile(id : Int) : UserProfile
+    suspend fun showUserProfile(id : Int) : UserProfile
+
+    suspend fun signIn(userEmail: String, password: String): UserProfile?
 }
