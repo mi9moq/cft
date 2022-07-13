@@ -7,4 +7,16 @@
     <string name="loginbtn">Войти</string>
     <string name="forgotpass">Забыли пароль?</string>
     <string name="swipe_left_for_register">Свайпните влево для регистрации</string>
+    <string name="user_login">Логин</string>
+    <string name="register">регистрация</string>
+    <string name="chek_in">зарегестрироваться</string>
+    <string name="e_mail">Электронная почта</string>
+    <string name="password">Пароль</string>
+    <string name="login">Войти</string>
+    <string name="forgotpass">Забыли пароль?</string>
+    <string name="swipe_left_for_register">Свайпните влево для регистрации</string>
+    <string name="regbtn">регистрация</string>
+    <string name="re_type_password">Повторите пароль</string>
+    <string name="your_name">Имя</string>
+    <string name="notequalpass">неверный пароль</string>
 </resources>
