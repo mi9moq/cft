@@ -26,14 +26,14 @@ class Settings : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val viewout = inflater.inflate(R.layout.settings_items, container, false)
-        signout = viewout.findViewById(R.id.logout)
+//        signout = viewout.findViewById(R.id.logout)
 
         rmTristateSwitch = viewout.findViewById(R.id.rmtheme)
         rmTristateSwitch.setSwitchToggleLeftDrawableRes(R.drawable.theme_auto)
         rmTristateSwitch.setSwitchToggleMiddleDrawableRes(R.drawable.theme_day)
         rmTristateSwitch.setSwitchToggleRightDrawableRes(R.drawable.theme_night)
 
-        languagebtn = viewout.findViewById(R.id.language)
+//        languagebtn = viewout.findViewById(R.id.language)
 
 
         rmTristateSwitch.addSwitchObserver { _, state ->

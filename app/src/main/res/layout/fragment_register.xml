@@ -30,7 +30,6 @@
         android:layout_marginBottom="10dp"
         android:background="@drawable/et_custom"
         android:fontFamily="@font/roboto_regular"
-        android:hint="@string/your_name"
         android:hint="@string/user_login"
         android:inputType="textPersonName"
         android:padding="15dp"
@@ -77,8 +76,7 @@
             android:maxLength="16"
             android:padding="15dp"
             android:textSize="15sp" />
-            android:textSize="15sp"
-            tools:ignore="TextContrastCheck" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
@@ -98,8 +96,6 @@
         android:textSize="15sp"
         app:layout_constraintTop_toBottomOf="@id/etPasswordLayout"
         tools:layout_editor_absoluteX="20dp" />
-        android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@id/etPasswordLayout" />
 
     <Button
         android:id="@+id/btn_register"

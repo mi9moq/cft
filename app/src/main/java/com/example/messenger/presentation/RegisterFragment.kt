@@ -1,4 +1,4 @@
-package com.kradyk.taskalarmer
+package com.example.messenger.presentation
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.ImageButton
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.messenger.R
@@ -18,7 +17,6 @@ class RegisterFragment : Fragment() {
     private lateinit var edemail: EditText
     private lateinit var edpass: EditText
     private lateinit var edrepass: EditText
-    private lateinit var imgGoogle: ImageButton
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,7 +29,6 @@ class RegisterFragment : Fragment() {
         edemail = viewout.findViewById(R.id.et_email)
         edpass = viewout.findViewById(R.id.et_password)
         edrepass = viewout.findViewById(R.id.et_repassword)
-        imgGoogle = viewout.findViewById(R.id.googleauth)
 
 
         btnreg.setOnClickListener {

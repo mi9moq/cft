@@ -27,7 +27,7 @@
                     android:layout_width="60dp"
                     android:layout_height="60dp"
                     android:layout_marginTop="15dp"
-                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
                     app:civ_border_color="@color/teal_200"
                     app:civ_border_width="2dp" />
 
@@ -36,13 +36,13 @@
                     style="@style/viewParent.headerText"
                     android:text="Roman"
                     android:textSize="18sp"
-                    android:layout_toRightOf="@id/profileCircleImageView"
+                    android:layout_toEndOf="@id/profileCircleImageView"
                     android:layout_marginTop="20dp"/>
 
                 <TextView
                     style="@style/viewParent.headerText"
                     android:layout_below="@id/usernameTextView"
-                    android:layout_toRightOf="@id/profileCircleImageView"
+                    android:layout_toEndOf="@id/profileCircleImageView"
                     android:text="@string/editPersonal"
                     android:textColor="#5D5C5C"
                     android:textSize="16sp" />
@@ -50,7 +50,7 @@
                 <ImageView
                     style="@style/viewParent"
                     android:src="@drawable/ic_more"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     tools:ignore="ContentDescription" />
 
@@ -84,40 +84,40 @@
                 style="@style/viewParent.headerText.settingsMiniTitle"
                 android:text="@string/data"/>
 
-            <TextView
-                android:id="@+id/wipe"
-                style="@style/viewParent.headerText.settingsTextIcon"
-                android:text="@string/wipeHints"
-                app:drawableLeftCompat="@drawable/ic_database" />
-            <TextView
-                android:id="@+id/cats"
-                style="@style/viewParent.headerText.settingsTextIcon"
-                android:text="@string/cats"
-                app:drawableLeftCompat="@drawable/ic_database" />
+<!--            <TextView-->
+<!--                android:id="@+id/wipe"-->
+<!--                style="@style/viewParent.headerText.settingsTextIcon"-->
+<!--                android:text="@string/wipeHints"-->
+<!--                app:drawableLeftCompat="@drawable/ic_database" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/cats"-->
+<!--                style="@style/viewParent.headerText.settingsTextIcon"-->
+<!--                android:text="@string/cats"-->
+<!--                app:drawableLeftCompat="@drawable/ic_database" />-->
 
 
-            <TextView
-                style="@style/viewParent.headerText.settingsMiniTitle"
-                android:text="@string/Regional"/>
+<!--            <TextView-->
+<!--                style="@style/viewParent.headerText.settingsMiniTitle"-->
+<!--                android:text="@string/Regional"/>-->
 
-            <TextView
-                android:id="@+id/language"
-                style="@style/viewParent.headerText.settingsTextIcon"
-                android:drawableLeft="@drawable/ic_languages"
-                android:text="@string/Language" />
+<!--            <TextView-->
+<!--                android:id="@+id/language"-->
+<!--                style="@style/viewParent.headerText.settingsTextIcon"-->
+<!--                android:drawableLeft="@drawable/ic_languages"-->
+<!--                android:text="@string/Language" />-->
 
-            <TextView
-                android:id="@+id/logout"
-                style="@style/viewParent.headerText.settingsTextIcon"
-                android:drawableLeft="@drawable/ic_logout"
-                android:text="@string/logout" />
+<!--            <TextView-->
+<!--                android:id="@+id/logout"-->
+<!--                style="@style/viewParent.headerText.settingsTextIcon"-->
+<!--                android:drawableLeft="@drawable/ic_logout"-->
+<!--                android:text="@string/logout" />-->
 
 
-            <TextView
-                android:id="@+id/about"
-                style="@style/viewParent.headerText.settingsTextIcon"
-                android:drawableLeft="@drawable/ic_baseline_info_24"
-                android:text="@string/about" />
+<!--            <TextView-->
+<!--                android:id="@+id/about"-->
+<!--                style="@style/viewParent.headerText.settingsTextIcon"-->
+<!--                android:drawableLeft="@drawable/ic_baseline_info_24"-->
+<!--                android:text="@string/about" />-->
 
 
 

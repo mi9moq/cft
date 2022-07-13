@@ -17,21 +17,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="10dp">
 
         <EditText
             android:id="@+id/editTextTextPersonName2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:inputType="textPersonName"
             android:layout_weight="1"
-            android:text="Name" />
+            android:hint="Input message"
+            android:backgroundTint="@color/transparent"/>
 
         <Button
             android:id="@+id/buttonSend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:background="@drawable/ic_send_fill0_wght400_grad0_opsz48"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.constraintlayout.widget.ConstraintLayout>

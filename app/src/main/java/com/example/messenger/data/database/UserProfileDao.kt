@@ -1,10 +1,11 @@
 package com.example.messenger.data.database
 
+import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.example.messenger.domain.UserProfile
-
+@Dao
 interface UserProfileDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

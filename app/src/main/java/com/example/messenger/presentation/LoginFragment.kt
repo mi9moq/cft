@@ -1,4 +1,4 @@
-package com.kradyk.taskalarmer
+package com.example.messenger.presentation
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -26,7 +26,6 @@ class LoginFragment : Fragment() {
         edemail = viewout.findViewById(R.id.et_email)
         edpass = viewout.findViewById(R.id.et_password)
         forgot = viewout.findViewById(R.id.forgot)
-        imgGoogle = viewout.findViewById(R.id.googleauth)
 
         btnlog.setOnClickListener {
             val email = edemail.text.toString()
