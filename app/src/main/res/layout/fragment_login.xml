@@ -7,7 +7,7 @@
 
 
     <TextView
-        android:id="@+id/tvlogin"
+        android:id="@+id/tv_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -32,10 +32,10 @@
         android:inputType="textEmailAddress"
         android:padding="15dp"
         android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@+id/tvlogin" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_login" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/etPasswordLayout"
+        android:id="@+id/til_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -74,10 +74,10 @@
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etPasswordLayout" />
+        app:layout_constraintTop_toBottomOf="@id/til_password" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_register"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
