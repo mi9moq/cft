@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <TextView
-        android:id="@+id/tvregister"
+        android:id="@+id/tv_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
@@ -20,9 +19,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <EditText
-        android:id="@+id/et_name"
+        android:id="@+id/et_login"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="20dp"
@@ -34,10 +32,10 @@
         android:inputType="textPersonName"
         android:padding="15dp"
         android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@+id/tvregister" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_register" />
 
     <EditText
-        android:id="@+id/et_email"
+        android:id="@+id/et_full_name"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_centerInParent="true"
@@ -46,19 +44,19 @@
         android:layout_marginBottom="10dp"
         android:background="@drawable/et_custom"
         android:fontFamily="@font/roboto_regular"
-        android:hint="@string/e_mail"
+        android:hint="@string/your_surname"
         android:inputType="textEmailAddress"
         android:padding="15dp"
         android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+        app:layout_constraintTop_toBottomOf="@+id/et_login" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/etPasswordLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/et_email"
+        android:layout_below="@+id/et_full_name"
         app:hintEnabled="false"
-        app:layout_constraintTop_toBottomOf="@id/et_email"
+        app:layout_constraintTop_toBottomOf="@id/et_full_name"
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -80,10 +78,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <EditText
-        android:id="@+id/et_repassword"
+        android:id="@+id/et_re_password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/etPasswordLayout"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:background="@drawable/et_custom"
         android:fontFamily="@font/roboto_regular"
         android:hint="@string/re_type_password"
@@ -92,20 +92,24 @@
         android:padding="15dp"
         android:textColorHint="#757575"
         android:textSize="15sp"
-        app:layout_constraintTop_toBottomOf="@id/etPasswordLayout"
-        tools:layout_editor_absoluteX="20dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etPasswordLayout" />
 
     <Button
         android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginEnd="-2dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
         android:layout_weight="10"
-
         android:fontFamily="@font/roboto_regular"
-        android:text="@string/regbtn"
+        android:text="@string/register"
         android:textColor="@android:color/white"
-        app:layout_constraintTop_toBottomOf="@+id/et_repassword"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_re_password" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

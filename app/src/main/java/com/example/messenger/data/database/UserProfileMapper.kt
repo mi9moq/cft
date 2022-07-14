@@ -1,22 +1,21 @@
 package com.example.messenger.data.database
 
-import com.example.messenger.domain.UserProfile
+import com.example.messenger.domain.profile.UserProfile
 
 class UserProfileMapper {
 
     fun mapEntityToDbModel(userProfile: UserProfile) = UserProfileDbModel(
         id = userProfile.id,
-        userName = userProfile.userName,
-        eMail = userProfile.eMail,
-        password = userProfile.password
+        userLogin = userProfile.userLogin,
+        userFullName = userProfile.userFullName,
+        userPassword = userProfile.userPassword
     )
 
-    fun mapDbModelToEntity(userProfileDbModel: UserProfileDbModel): UserProfile {
-        return UserProfile(
-            id = userProfileDbModel.id,
-            userName = userProfileDbModel.userName,
-            eMail = userProfileDbModel.eMail,
-            password = userProfileDbModel.password
-        )
-    }
+    fun mapDbModelToEntity(userProfileDbModel: UserProfileDbModel) = UserProfile(
+        id = userProfileDbModel.id,
+        userLogin = userProfileDbModel.userLogin,
+        userFullName = userProfileDbModel.userFullName,
+        userPassword = userProfileDbModel.userPassword
+    )
+
 }

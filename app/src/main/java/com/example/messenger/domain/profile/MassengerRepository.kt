@@ -1,4 +1,4 @@
-package com.example.messenger.domain
+package com.example.messenger.domain.profile
 
 interface MessengerRepository {
 

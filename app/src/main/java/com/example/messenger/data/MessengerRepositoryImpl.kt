@@ -3,8 +3,8 @@ package com.example.messenger.data
 import android.app.Application
 import com.example.messenger.data.database.AppDatabase
 import com.example.messenger.data.database.UserProfileMapper
-import com.example.messenger.domain.MessengerRepository
-import com.example.messenger.domain.UserProfile
+import com.example.messenger.domain.profile.MessengerRepository
+import com.example.messenger.domain.profile.UserProfile
 
 class MessengerRepositoryImpl(
 application: Application
@@ -26,12 +26,12 @@ application: Application
         return mapper.mapDbModelToEntity(dbModel)
     }
 
-    override suspend fun signIn(userEmail: String, password: String):UserProfile? {
+    override suspend fun signIn(userEmail: String, password: String): UserProfile? {
         val dbModel = userProfileDao.signIn(userEmail,password)
-        if(dbModel==null){
-            return null
+        return if(dbModel==null){
+            null
         }else{
-            return mapper.mapDbModelToEntity(dbModel)
+            mapper.mapDbModelToEntity(dbModel)
         }
     }
 }
