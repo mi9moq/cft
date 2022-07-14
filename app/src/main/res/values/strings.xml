@@ -12,4 +12,9 @@
     <string name="your_surname">Фамилия</string>
     <string name="your_lastname">Отчество</string>
     <string name="notequalpass">неверный пароль</string>
+    <string name="empty_input">Поле не может быть пустым</string>
+    <string name="empty_input_or_spec_char">Поле пустое или содержит спец символы</string>
+    <string name="invalid_mail">Неверная почта</string>
+    <string name="invalid_password">Пароль может содержать только латинские буквы и цифры</string>
+    <string name="invalid_name">Поле может содержать только латиницу и кириллицу</string>
 </resources>

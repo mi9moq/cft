@@ -10,7 +10,4 @@ class MyProfileFragment : Fragment() {
         get() = checkNotNull(_binding) {
             "Cannot access binding because it is null. Is the view visible?"
         }
-
-
-
 }

@@ -40,7 +40,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/surname"
+                android:text="1"
                 android:layout_margin="4dp"
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
@@ -48,7 +48,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/name"
+                android:text="2"
                 android:layout_margin="4dp"
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
@@ -56,7 +56,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/lastname"
+                android:text="3"
                 android:layout_margin="4dp"
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
@@ -64,7 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
-                android:text="@string/phone_number"
+                android:text="4"
                 android:textSize="16sp"
                 android:textColor="@color/black"/>
         </LinearLayout>

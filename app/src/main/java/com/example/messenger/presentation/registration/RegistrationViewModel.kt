@@ -42,18 +42,55 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
         val userLogin = parseInput(inputUserLogin)
         val userFullName = parseInput(inputUserFullName)
         val userPassword = parseInput(inputPassword)
-        viewModelScope.launch {
-            val userProfile = UserProfile(
-                userLogin = userLogin,
-                userFullName = userFullName,
-                userPassword = userPassword
-            )
-            userRegistration.userRegistration(userProfile)
+        val fieldsValid = validateInput(
+            userLogin,
+            userFullName,
+            userPassword
+        )
+        if (fieldsValid) {
+            viewModelScope.launch {
+                val userProfile = UserProfile(
+                    userLogin = userLogin,
+                    userFullName = userFullName,
+                    userPassword = userPassword
+                )
+                userRegistration.userRegistration(userProfile)
+            }
         }
     }
 
     private fun parseInput(inputString: String?): String {
         return inputString?.trim() ?: ""
+    }
+
+    private fun validateInput(
+        userLogin: String,
+        userFullName: String,
+        userPassword: String
+    ): Boolean {
+        var result = true
+        if (
+            userLogin.isBlank() ||
+            !userLogin.contains('@') ||
+            !userLogin.contains('.') ||
+            userLogin[userLogin.length - 1] == '.'
+        ) {
+            _errorInputUserLogin.value = true
+            result = false
+        }
+        if (
+            userFullName.isBlank() ||
+            userFullName.any { it.isDigit() } ||
+            Regex("[~!@#\$%^&*+_()':;?.,]").containsMatchIn(userFullName)
+        ) {
+            _errorInputUserFullName.value = true
+            result = false
+        }
+        if (userPassword.isBlank()||Regex("[^A-Za-z0-9]").containsMatchIn(userPassword)) {
+            _errorInputPassword.value = true
+            result = false
+        }
+        return result
     }
 
     fun resetErrorInputLogin() {
