@@ -28,9 +28,6 @@ class RegisterFragment : Fragment() {
     private lateinit var etPassword: EditText
     private lateinit var btnRegister: Button
 
-
-
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

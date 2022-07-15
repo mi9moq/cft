@@ -14,12 +14,11 @@ import com.rm.rmswitch.RMTristateSwitch
 
 class Settings : Fragment() {
 
-
-
     private val KEY_RADIOBUTTON_INDEX = "SAVED_RADIO_BUTTON_INDEX"
     private lateinit var rmTristateSwitch: RMTristateSwitch
     lateinit var languagebtn: TextView
     private lateinit var signout: TextView
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -65,8 +64,6 @@ class Settings : Fragment() {
         editor?.apply()
     }
 
-
-
     private fun loadPreferences() {
         val sharedPreferences = this.activity?.getSharedPreferences(
             APP_PREFERENCES, MODE_PRIVATE
@@ -82,9 +79,6 @@ class Settings : Fragment() {
 
         }
     }
-
-
-
 
     companion object {
         const val APP_PREFERENCES = "theme"

@@ -30,7 +30,6 @@ public class MessageController extends RecyclerView.Adapter {
     private int outgoingLayout;
     private int incomingLayout;
 
-
     public static class Message {
         String text;
         Date date;
