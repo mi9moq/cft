@@ -2,6 +2,7 @@
     <string name="app_name">Болталка без точки</string>
     <string name="user_login">Логин</string>
     <string name="register">регистрация</string>
+    <string name="user_email">почта</string>
     <string name="chek_in">зарегестрироваться</string>
     <string name="password">Пароль</string>
     <string name="login">Войти</string>
