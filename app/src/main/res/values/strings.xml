@@ -23,4 +23,6 @@
     <string name="email">Успешно</string>
     <string name="inp_pass">Error</string>
     <string name="pass_short">Короткий пароль</string>
+    <string name="editPersonal">Редактировать данные</string>
+    <string name="sttheme">Тёмная тема</string>
 </resources>

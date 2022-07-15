@@ -3,9 +3,8 @@ package com.example.messenger.data
 import android.app.Application
 import com.example.messenger.data.database.AppDatabase
 import com.example.messenger.data.database.UserProfileMapper
-import com.example.messenger.domain.MessengerRepository
-import com.example.messenger.domain.UserProfile
-
+import com.example.messenger.domain.profile.MessengerRepository
+import com.example.messenger.domain.profile.UserProfile
 
 
 class MessengerRepositoryImpl(

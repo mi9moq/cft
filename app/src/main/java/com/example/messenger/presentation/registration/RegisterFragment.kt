@@ -140,7 +140,6 @@ class RegisterFragment : Fragment() {
                 etFullName.text.toString(),
                 etPassword.text.toString()
             )
-            MAIN.navController.navigate(R.id.myProfileFragment)
         }
     }
 
