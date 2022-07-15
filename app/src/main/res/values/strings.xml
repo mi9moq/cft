@@ -1,10 +1,26 @@
 <resources>
-    <string name="app_name">messenger</string>
-    <string name="login">Login</string>
-    <string name="register">Register</string>
-    <string name="e_mail">Электронная почта</string>
+    <string name="app_name">Болталка без точки</string>
+    <string name="user_login">Логин</string>
+    <string name="register">регистрация</string>
+    <string name="chek_in">зарегестрироваться</string>
     <string name="password">Пароль</string>
-    <string name="loginbtn">Войти</string>
-    <string name="forgotpass">Забыли пароль?</string>
+    <string name="login">Войти</string>
+    <string name="forgot_pass">Забыли пароль?</string>
     <string name="swipe_left_for_register">Свайпните влево для регистрации</string>
+    <string name="swipe_right_for_login">Свайпните вправо для входа</string>
+    <string name="re_type_password">Повторите пароль</string>
+    <string name="your_name">Имя</string>
+    <string name="your_surname">Фамилия</string>
+    <string name="your_lastname">Отчество</string>
+    <string name="not_equal_pass">неверный пароль</string>
+    <string name="empty_input">Поле не может быть пустым</string>
+    <string name="empty_input_or_spec_char">Поле пустое или содержит спец символы</string>
+    <string name="invalid_mail">Неверная почта</string>
+    <string name="invalid_password">Пароль может содержать только латинские буквы и цифры</string>
+    <string name="invalid_name">Поле может содержать только латиницу и кириллицу</string>
+    <string name="data">Данные</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="email">Успешно</string>
+    <string name="inp_pass">Error</string>
+    <string name="pass_short">Короткий пароль</string>
 </resources>
