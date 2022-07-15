@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
 import com.example.messenger.R
 import com.example.messenger.presentation.MAIN
 
@@ -35,7 +36,7 @@ class LoginFragment : Fragment() {
         initViews(view)
         login()
         btnRegister.setOnClickListener {
-            MAIN.navController.navigate(R.id.show_register_fragment)
+            it.findNavController().navigate(R.id.show_register_fragment)
         }
     }
 

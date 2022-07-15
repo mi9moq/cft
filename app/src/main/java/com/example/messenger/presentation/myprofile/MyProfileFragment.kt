@@ -24,7 +24,7 @@ class MyProfileFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_my_profile,container,false)
+        return inflater.inflate(R.layout.my_profile_fragment,container,false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -32,10 +32,10 @@ class MyProfileFragment : Fragment() {
         viewModel = ViewModelProvider(this) [MyProfileViewModel::class.java]
         initViews(view)
         launchUserProfile()
-        viewModel.userProfile.observe(viewLifecycleOwner){
-            tvUserLogin.text = it.userLogin
-            tvUserName.text = it.userFullName
-        }
+//        viewModel.userProfile.observe(viewLifecycleOwner){
+//            tvUserLogin.text = it.userLogin
+//            tvUserName.text = it.userFullName
+//        }
     }
 
     private fun initViews(view: View){
@@ -44,6 +44,6 @@ class MyProfileFragment : Fragment() {
     }
 
     private fun launchUserProfile(){
-        viewModel.showInfo(userId)
+//        viewModel.showInfo(userId)
     }
 }

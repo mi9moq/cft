@@ -23,4 +23,24 @@
         android:name="com.example.messenger.presentation.registration.RegisterFragment"
         tools:layout="@layout/fragment_register"
         android:label="RegisterFragment" />
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.example.messenger.presentation.myprofile.MyProfileFragment"
+        tools:layout="@layout/fragment_my_profile"
+        android:label="MyProfileFragment" />
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.messenger.presentation.Settings"
+        android:label="Settings"
+        tools:layout="@layout/settings_items"/>
+    <fragment
+        android:id="@+id/listUserChatsFragment"
+        android:name="com.example.messenger.presentation.ListUserChats"
+        android:label="ListUserChatsFragment"
+        tools:layout="@layout/listuserchats"/>
+    <fragment
+        android:id="@+id/message2"
+        android:name="com.example.messenger.presentation.Message"
+        tools:layout="@layout/chatfragment"
+        android:label="Message" />
 </navigation>
