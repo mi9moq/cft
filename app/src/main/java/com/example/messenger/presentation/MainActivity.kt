@@ -20,14 +20,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         navController = Navigation.findNavController(this,R.id.nav_host_fragment)
-
         bottomNavigationBar = findViewById(R.id.bottomNavBar)
         NavigationUI.setupWithNavController(bottomNavigationBar, navController)
 
     }
     private val listener = NavController.OnDestinationChangedListener { controller, destination, arguments ->
-        if (destination.id!=R.id.loginFragment&&destination.id!=R.id.registerFragment)
+
+        if ((destination.id!=R.id.loginFragment)&&(destination.id!=R.id.registerFragment)&&(destination.id!=R.id.chatFragment))
             bottomNavigationBar.visibility=View.VISIBLE
+        else
+            bottomNavigationBar.visibility=View.GONE
+
     }
     override fun onResume() {
         super.onResume()

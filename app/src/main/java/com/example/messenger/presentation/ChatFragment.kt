@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.example.messenger.R
 
-class Message : Fragment() {
+class ChatFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,

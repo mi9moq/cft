@@ -11,8 +11,9 @@ import android.widget.EditText
 import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.messenger.R
-import com.example.messenger.presentation.MAIN
 import com.google.android.material.textfield.TextInputLayout
 
 
@@ -47,7 +48,7 @@ class RegisterFragment : Fragment() {
         observeViewModel()
         createUserProfile()
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
-            MAIN.navController.popBackStack(R.id.loginFragment, false)
+            view.findNavController().popBackStack(R.id.loginFragment, false)
         }
     }
 
@@ -140,7 +141,7 @@ class RegisterFragment : Fragment() {
                 etFullName.text.toString(),
                 etPassword.text.toString()
             )
-            MAIN.navController.navigate(R.id.myProfileFragment)
+            it.findNavController().navigate(R.id.listUserChatsFragment)
         }
     }
 

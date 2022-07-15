@@ -13,9 +13,7 @@
         <action
             android:id="@+id/show_register_fragment"
             app:destination="@id/registerFragment"
-            app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/side_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/side_out_rigth" />
     </fragment>
     <fragment
@@ -39,8 +37,8 @@
         android:label="ListUserChatsFragment"
         tools:layout="@layout/listuserchats"/>
     <fragment
-        android:id="@+id/message2"
-        android:name="com.example.messenger.presentation.Message"
-        tools:layout="@layout/chatfragment"
-        android:label="Message" />
+        android:id="@+id/chatFragment"
+        android:name="com.example.messenger.presentation.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/chatfragment"/>
 </navigation>

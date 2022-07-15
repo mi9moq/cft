@@ -9,12 +9,12 @@ import androidx.room.Query
 interface UserProfileDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun userRegistration(userProfileDbModel: UserProfileDbModel)
+     fun userRegistration(userProfileDbModel: UserProfileDbModel)
 
     @Query("SELECT * FROM user_profile WHERE id=:userProfileId")
-    suspend fun showUserProfile(userProfileId: Int): UserProfileDbModel
+    fun showUserProfile(userProfileId: Int): UserProfileDbModel
 
 
     @Query("SELECT * FROM user_profile WHERE userLogin=:login AND userPassword=:password")
-    suspend fun signIn(login: String, password: String):UserProfileDbModel?
+     fun signIn(login: String, password: String):UserProfileDbModel?
 }

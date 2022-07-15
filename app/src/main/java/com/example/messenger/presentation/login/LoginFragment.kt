@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.example.messenger.R
-import com.example.messenger.presentation.MAIN
 
 
 class LoginFragment : Fragment() {
