@@ -8,8 +8,8 @@ import com.example.messenger.domain.profile.UserProfile
 
 
 class MessengerRepositoryImpl(
-application: Application
-): MessengerRepository {
+    application: Application
+) : MessengerRepository {
 
     private val userProfileDao = AppDatabase.getInstance(application).userProfileDao()
     private val mapper = UserProfileMapper()
@@ -29,10 +29,10 @@ application: Application
 
 
     override suspend fun signIn(userEmail: String, password: String): UserProfile? {
-        val dbModel = userProfileDao.signIn(userEmail,password)
-        return if(dbModel==null){
+        val dbModel = userProfileDao.signIn(userEmail, password)
+        return if (dbModel == null) {
             null
-        }else{
+        } else {
             mapper.mapDbModelToEntity(dbModel)
         }
     }
