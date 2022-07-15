@@ -14,6 +14,7 @@ interface UserProfileDao {
     @Query("SELECT * FROM user_profile WHERE id=:userProfileId")
     suspend fun showUserProfile(userProfileId: Int): UserProfileDbModel
 
+
     @Query("SELECT * FROM user_profile WHERE userLogin=:login AND userPassword=:password")
     suspend fun signIn(login: String, password: String):UserProfileDbModel?
 }

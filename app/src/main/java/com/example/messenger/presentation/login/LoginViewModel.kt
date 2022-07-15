@@ -21,10 +21,10 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
         val userName = parseInput(inputUserName)
         val userPassword = parseInput(inputPassword)
         viewModelScope.launch {
-            val userProfile = userSignIn.userSignIn(userName,userPassword)
-            if(userProfile==null){
-                Log.d("LoginViewModel","такого пользователя не сущ")
-            }else{
+            val userProfile = userSignIn.userSignIn(userName, userPassword)
+            if (userProfile == null) {
+                Log.d("LoginViewModel", "такого пользователя не сущ")
+            } else {
                 Log.d("LoginViewModel", userProfile.userFullName)
             }
         }

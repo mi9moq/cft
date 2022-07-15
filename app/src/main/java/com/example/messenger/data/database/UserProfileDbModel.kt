@@ -2,6 +2,8 @@ package com.example.messenger.data.database
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 @Entity(tableName = "user_profile")
 data class UserProfileDbModel(

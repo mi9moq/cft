@@ -86,7 +86,7 @@ class RegistrationViewModel(application: Application) : AndroidViewModel(applica
             _errorInputUserFullName.value = true
             result = false
         }
-        if (userPassword.isBlank()||Regex("[^A-Za-z0-9]").containsMatchIn(userPassword)) {
+        if (userPassword.isBlank() || Regex("[^A-Za-z0-9]").containsMatchIn(userPassword)) {
             _errorInputPassword.value = true
             result = false
         }
