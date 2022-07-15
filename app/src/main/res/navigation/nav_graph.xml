@@ -17,10 +17,22 @@
             app:exitAnim="@anim/side_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/side_out_rigth" />
+        <action
+            android:id="@+id/action_loginFragment_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.example.messenger.presentation.registration.RegisterFragment"
         tools:layout="@layout/fragment_register"
-        android:label="RegisterFragment" />
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.example.messenger.presentation.myprofile.MyProfileFragment"
+        android:label="MyProfileFragment"
+        tools:layout="@layout/fragment_my_profile"/>
 </navigation>

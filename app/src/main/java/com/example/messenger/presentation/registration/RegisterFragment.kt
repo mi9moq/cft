@@ -29,6 +29,8 @@ class RegisterFragment : Fragment() {
     private lateinit var btnRegister: Button
 
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -138,6 +140,7 @@ class RegisterFragment : Fragment() {
                 etFullName.text.toString(),
                 etPassword.text.toString()
             )
+            MAIN.navController.navigate(R.id.myProfileFragment)
         }
     }
 
