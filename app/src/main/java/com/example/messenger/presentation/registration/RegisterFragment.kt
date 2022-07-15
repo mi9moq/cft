@@ -11,9 +11,13 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.activity.addCallback
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
+import androidx.navigation.fragment.findNavController
 import com.example.messenger.R
+import com.example.messenger.presentation.MAIN
 import com.google.android.material.textfield.TextInputLayout
 
 
@@ -31,6 +35,8 @@ class RegisterFragment : Fragment() {
     private lateinit var etRePassword: EditText
     private lateinit var btnRegister: Button
 
+    private lateinit var navController: NavController
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -46,6 +52,10 @@ class RegisterFragment : Fragment() {
         addTextChangeListeners()
         observeViewModel()
         createUserProfile()
+        //navController = findNavController()
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
+            MAIN.navController.popBackStack(R.id.loginFragment, false)
+        }
     }
 
     private fun initViews(view: View) {

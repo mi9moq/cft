@@ -37,7 +37,7 @@ class LoginFragment : Fragment() {
         initViews(view)
         login()
         btnRegister.setOnClickListener {
-            MAIN.navController.navigate(R.id.action_loginFragment_to_registerFragment)
+            MAIN.navController.navigate(R.id.show_register_fragment)
         }
     }
 
